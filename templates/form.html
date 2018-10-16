@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/assets/images/favicon.png">
+    <title>Material Pro Admin Template - The Most Complete &amp; Trusted Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./form_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./form_files/steps.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="./form_files/sweetalert.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="./form_files/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="./form_files/default-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class="fix-header fix-sidebar card-no-border mini-sidebar">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader" style="display: none;">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar is_stuck" style="position: fixed; top: 0px; width: 1326px;">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="./form_files/logo-icon.png" alt="homepage" class="dark-logo">
+                            <!-- Light Logo icon -->
+                            <img src="./form_files/logo-light-icon.png" alt="homepage" class="light-logo">
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span style="display: none;">
+                         <!-- dark Logo text -->
+                         <img src="./form_files/logo-text.png" alt="homepage" class="dark-logo">
+                         <!-- Light Logo text -->    
+                         <img src="./form_files/logo-light-text.png" class="light-logo" alt="homepage"></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item hidden-sm-down search-box">
+                            <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown mega-dropdown"> <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-view-grid"></i></a>
+                            <div class="dropdown-menu scale-up-left">
+                                <ul class="mega-dropdown-menu row">
+                                    <li class="col-lg-3 col-xlg-2 m-b-30">
+                                        <h4 class="m-b-20">CAROUSEL</h4>
+                                        <!-- CAROUSEL -->
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item">
+                                                    <div class="container"> <img class="d-block img-fluid" src="./form_files/img1.jpg" alt="First slide"></div>
+                                                </div>
+                                                <div class="carousel-item active">
+                                                    <div class="container"><img class="d-block img-fluid" src="./form_files/img2.jpg" alt="Second slide"></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="container"><img class="d-block img-fluid" src="./form_files/img3.jpg" alt="Third slide"></div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                                            <a class="carousel-control-next" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                                        </div>
+                                        <!-- End CAROUSEL -->
+                                    </li>
+                                    <li class="col-lg-3 m-b-30">
+                                        <h4 class="m-b-20">ACCORDION</h4>
+                                        <!-- Accordian -->
+                                        <div id="accordion" class="nav-accordion" role="tablist" aria-multiselectable="true">
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingOne">
+                                                    <h5 class="mb-0">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Collapsible Group Item #1
+                                                </a>
+                                              </h5> </div>
+                                                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high. </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Collapsible Group Item #2
+                                                </a>
+                                              </h5> </div>
+                                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="headingThree">
+                                                    <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Collapsible Group Item #3
+                                                </a>
+                                              </h5> </div>
+                                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3  m-b-30">
+                                        <h4 class="m-b-20">CONTACT US</h4>
+                                        <!-- Contact -->
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Name"> </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Enter email"> </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-info">Submit</button>
+                                        </form>
+                                    </li>
+                                    <li class="col-lg-3 col-xlg-4 m-b-30">
+                                        <h4 class="m-b-20">List style</h4>
+                                        <!-- List style -->
+                                        <ul class="list-style-none">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> You can give link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Give link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Another Give link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Forth link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i> Another fifth link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Comment -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox scale-up">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">Notifications</div>
+                                    </li>
+                                    <li style="overflow: visible;">
+                                        <div class="slimScrollDiv" style="position: relative; overflow: visible hidden; width: auto; height: 250px;"><div class="message-center" style="overflow: hidden; width: auto; height: 250px;">
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Luanch Admin</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="btn btn-success btn-circle"><i class="ti-calendar"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Event today</h5> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="btn btn-info btn-circle"><i class="ti-settings"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Settings</h5> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="btn btn-primary btn-circle"><i class="ti-user"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                            </a>
+                                        </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 192.901px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-email"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu mailbox dropdown-menu-right scale-up" aria-labelledby="2">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">You have 4 new messages</div>
+                                    </li>
+                                    <li style="overflow: visible;">
+                                        <div class="slimScrollDiv" style="position: relative; overflow: visible hidden; width: auto; height: 250px;"><div class="message-center" style="overflow: hidden; width: auto; height: 250px;">
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="user-img"> <img src="./form_files/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="user-img"> <img src="./form_files/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="user-img"> <img src="./form_files/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">
+                                                <div class="user-img"> <img src="./form_files/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                                            </a>
+                                        </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 183.824px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./form_files/1.jpg" alt="user" class="profile-pic"></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="./form_files/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>Steave Jobs</h4>
+                                                <p class="text-muted">varun@gmail.com</p><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-us"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up"> <a class="dropdown-item" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="flag-icon flag-icon-in"></i> India</a> <a class="dropdown-item" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="flag-icon flag-icon-fr"></i> French</a> <a class="dropdown-item" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="flag-icon flag-icon-cn"></i> China</a> <a class="dropdown-item" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#"><i class="flag-icon flag-icon-de"></i> Dutch</a> </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header><div style="position: relative; width: 1326px; height: 70px; display: block; vertical-align: baseline; float: none;"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" style="overflow: visible;">
+            <!-- Sidebar scroll-->
+            <div class="slimScrollDiv" style="position: relative; overflow: visible; width: auto; height: 100%;"><div class="scroll-sidebar" style="overflow: visible hidden; width: auto; height: 100%;">
+                <!-- User profile -->
+                <div class="user-profile" style="background: url(../assets/images/background/user-info.jpg) no-repeat;">
+                    <!-- User profile image -->
+                    <div class="profile-img"> <img src="./form_files/profile.png" alt="user"> </div>
+                    <!-- User profile text-->
+                    <div class="profile-text"> <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe</a>
+                        <div class="dropdown-menu animated flipInY">
+                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                            <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                            <div class="dropdown-divider"></div> <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                            <div class="dropdown-divider"></div> <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">PERSONAL</li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index.html">Dashboard 1</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index2.html">Dashboard 2</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index3.html">Dashboard 3</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index4.html">Dashboard 4</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index5.html">Dashboard 5</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/index6.html">Dashboard 6</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-laptop-windows"></i><span class="hide-menu">Template Demos</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/material-rtl/index.html">RTL Version</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/horizontal/index2.html">Horizontal</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/dark/index3.html">Dark Version</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/material/index4.html">Material Version</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Apps</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-calendar.html">Calendar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-chat.html">Chat app</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-ticket.html">Support Ticket</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-contact.html">Contact / Employee</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-contact2.html">Contact Grid</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-contact-detail.html">Contact Detail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">Inbox</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-email.html">Mailbox</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-email-detail.html">Mailbox Detail</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/app-compose.html">Compose Mail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Ui Elements</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-cards.html">Cards</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-user-card.html">User Cards</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-buttons.html">Buttons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-modals.html">Modals</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-tab.html">Tab</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-tooltip-popover.html">Tooltip &amp; Popover</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-tooltip-stylish.html">Tooltip stylish</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-sweetalert.html">Sweet Alert</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-notification.html">Notification</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-progressbar.html">Progressbar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-nestable.html">Nestable</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-range-slider.html">Range slider</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-timeline.html">Timeline</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-typography.html">Typography</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-horizontal-timeline.html">Horizontal Timeline</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-session-timeout.html">Session Timeout</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-session-ideal-timeout.html">Session Ideal Timeout</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-bootstrap.html">Bootstrap Ui</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-breadcrumb.html">Breadcrumb</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-bootstrap-switch.html">Bootstrap Switch</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-list-media.html">List Media</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-ribbons.html">Ribbons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-grid.html">Grid</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-carousel.html">Carousel</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-date-paginator.html">Date-paginator</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/ui-dragable-portlet.html">Dragable Portlet</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">FORMS, TABLE &amp; WIDGETS</li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Forms</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-basic.html">Basic Forms</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-layout.html">Form Layouts</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-addons.html">Form Addons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-material.html">Form Material</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-float-input.html">Floating Lable</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-pickers.html">Form Pickers</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-upload.html">File Upload</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-mask.html">Form Mask</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-validation.html">Form Validation</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-dropzone.html">File Dropzone</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-icheck.html">Icheck control</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-img-cropper.html">Image Cropper</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-bootstrapwysihtml5.html">HTML5 Editor</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-typehead.html">Form Typehead</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html">Form Wizard</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-xeditable.html">Xeditable Editor</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-summernote.html">Summernote Editor</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-tinymce.html">Tinymce Editor</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Tables</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-basic.html">Basic Tables</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-layout.html">Table Layouts</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-data-table.html">Data Tables</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-footable.html">Footable</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-jsgrid.html">Js Grid Table</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-responsive.html">Responsive Table</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-bootstrap.html">Bootstrap Tables</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/table-editable-table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-widgets"></i><span class="hide-menu">Widgets</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/widget-apps.html">Widget Apps</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/widget-data.html">Widget Data</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/widget-charts.html">Widget Charts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">EXTRA COMPONENTS</li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-book-multiple"></i><span class="hide-menu">Page Layout</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/layout-single-column.html">1 Column</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/layout-fix-header.html">Fix header</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/layout-fix-sidebar.html">Fix sidebar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/layout-fix-header-sidebar.html">Fixe header &amp; Sidebar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/layout-boxed.html">Boxed Layout</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/layout-logo-center.html">Logo in Center</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Sample Pages</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/starter-kit.html">Starter Kit</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-blank.html">Blank page</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="has-arrow">Authentication <span class="label label-rounded label-success">6</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-login.html">Login 1</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-login-2.html">Login 2</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-register.html">Register</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-register2.html">Register 2</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-lockscreen.html">Lockscreen</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-recover-password.html">Recover password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-profile.html">Profile page</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-animation.html">Animation</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-fix-innersidebar.html">Sticky Left sidebar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-fix-inner-right-sidebar.html">Sticky Right sidebar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-invoice.html">Invoice</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-treeview.html">Treeview</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-utility-classes.html">Helper Classes</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-search-result.html">Search result</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-scroll.html">Scrollbar</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-pricing.html">Pricing</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-lightbox-popup.html">Lighbox popup</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-gallery.html">Gallery</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-faq.html">Faqs</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="has-arrow">Error Pages</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-error-400.html">400</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-error-403.html">403</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-error-404.html">404</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-error-500.html">500</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/pages-error-503.html">503</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Charts</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-morris.html">Morris Chart</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-chartist.html">Chartis Chart</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-echart.html">Echarts</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-flot.html">Flot Chart</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-knob.html">Knob Chart</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-chart-js.html">Chartjs</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-sparkline.html">Sparkline Chart</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-extra-chart.html">Extra chart</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/chart-peity.html">Peity Charts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-brush"></i><span class="hide-menu">Icons</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-material.html">Material Icons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-fontawesome.html">Fontawesome Icons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-themify.html">Themify Icons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-linea.html">Linea Icons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-weather.html">Weather Icons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-simple-lineicon.html">Simple Lineicons</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/icon-flag.html">Flag Icons</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span class="hide-menu">Maps</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/map-google.html">Google Maps</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/map-vector.html">Vector Maps</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.1</a></li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.2</a></li>
+                                <li>
+                                    <a class="has-arrow" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" aria-expanded="false">Menu 1.3</a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.3.1</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.3.2</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.3.3</a></li>
+                                        <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.3.4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#">item 1.4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; left: 1px; height: 327.109px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div></div>
+            <!-- End Sidebar scroll-->
+            <!-- Bottom points-->
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" class="link" data-toggle="tooltip" title="" data-original-title="Settings"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i class="mdi mdi-gmail"></i></a>
+                <!-- item-->
+                <a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
+            <!-- End Bottom points-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="min-height: 576px;">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Forms</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Form</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 col-4 align-self-center">
+                        <div class="d-flex m-t-10 justify-content-end">
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0"><small>THIS MONTH</small></h6>
+                                    <h4 class="m-t-0 text-info">$58,356</h4></div>
+                                <div class="spark-chart">
+                                    <div id="monthchart"><canvas width="60" height="35" style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0"><small>LAST MONTH</small></h6>
+                                    <h4 class="m-t-0 text-primary">$48,356</h4></div>
+                                <div class="spark-chart">
+                                    <div id="lastmonthchart"><canvas width="60" height="35" style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="right-side-toggle waves-effect waves-light btn-success btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body wizard-content">
+                                <h4 class="card-title">Step wizard</h4>
+                                <h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com/" target="_blank">offical website</a></h6>
+                                <form action="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="tab-wizard wizard-circle wizard clearfix" role="application" id="steps-uid-0"><div class="steps clearfix"><ul role="tablist"><li role="tab" class="first current" aria-disabled="false" aria-selected="true"><a id="steps-uid-0-t-0" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-0-h-0" aria-controls="steps-uid-0-p-0"><span class="current-info audible">current step: </span><span class="step">1</span> Personal Info</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-0-t-1" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-0-h-1" aria-controls="steps-uid-0-p-1"><span class="step">2</span> Job Status</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-0-t-2" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-0-h-2" aria-controls="steps-uid-0-p-2"><span class="step">3</span> Interview</a></li><li role="tab" class="disabled last" aria-disabled="true"><a id="steps-uid-0-t-3" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-0-h-3" aria-controls="steps-uid-0-p-3"><span class="step">4</span> Remark</a></li></ul></div><div class="content clearfix">
+                                    <!-- Step 1 -->
+                                    <h6 id="steps-uid-0-h-0" tabindex="-1" class="title current">Personal Info</h6>
+                                    <section id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0" class="body current" aria-hidden="false">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName1">First Name :</label>
+                                                    <input type="text" class="form-control" id="firstName1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">Last Name :</label>
+                                                    <input type="text" class="form-control" id="lastName1"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="emailAddress1">Email Address :</label>
+                                                    <input type="email" class="form-control" id="emailAddress1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phoneNumber1">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="phoneNumber1"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="location1">Select City :</label>
+                                                    <select class="custom-select form-control" id="location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="Amsterdam">India</option>
+                                                        <option value="Berlin">USA</option>
+                                                        <option value="Frankfurt">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="date1"> </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6 id="steps-uid-0-h-1" tabindex="-1" class="title">Job Status</h6>
+                                    <section id="steps-uid-0-p-1" role="tabpanel" aria-labelledby="steps-uid-0-h-1" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle1">Job Title :</label>
+                                                    <input type="text" class="form-control" id="jobTitle1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="videoUrl1">Company Name :</label>
+                                                    <input type="text" class="form-control" id="videoUrl1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription1">Job Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6 id="steps-uid-0-h-2" tabindex="-1" class="title">Interview</h6>
+                                    <section id="steps-uid-0-p-2" role="tabpanel" aria-labelledby="steps-uid-0-h-2" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Interview For :</label>
+                                                    <input type="text" class="form-control" id="int1"> </div>
+                                                <div class="form-group">
+                                                    <label for="intType1">Interview Type :</label>
+                                                    <select class="custom-select form-control" id="intType1" data-placeholder="Type to search cities" name="intType1">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Location1">Location :</label>
+                                                    <select class="custom-select form-control" id="Location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control" id="jobTitle2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <div class="m-b-10">
+                                                            <label class="custom-control custom-radio">
+                                                                <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                                                <span class="custom-control-label">Employee</span>
+                                                            </label>
+                                                            <label class="custom-control custom-radio">
+                                                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                                                <span class="custom-control-label">Contract</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6 id="steps-uid-0-h-3" tabindex="-1" class="title">Remark</h6>
+                                    <section id="steps-uid-0-p-3" role="tabpanel" aria-labelledby="steps-uid-0-h-3" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control" id="participants1" name="location">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">1 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">2 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">3 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">4 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">5 star</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div><div class="actions clearfix"><ul role="menu" aria-label="Pagination"><li class="disabled" aria-disabled="true"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#previous" role="menuitem">Previous</a></li><li aria-hidden="false" aria-disabled="false"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#next" role="menuitem">Next</a></li><li aria-hidden="true" style="display: none;"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#finish" role="menuitem">Submit</a></li></ul></div></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Validation wizard -->
+                <div class="row" id="validation">
+                    <div class="col-12">
+                        <div class="card wizard-content">
+                            <div class="card-body">
+                                <h4 class="card-title">Step wizard with validation</h4>
+                                <h6 class="card-subtitle">You can us the validation like what we did</h6>
+                                <form action="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="validation-wizard wizard-circle wizard clearfix" role="application" id="steps-uid-2" novalidate="novalidate"><div class="steps clearfix"><ul role="tablist"><li role="tab" class="first current" aria-disabled="false" aria-selected="true"><a id="steps-uid-2-t-0" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-2-h-0" aria-controls="steps-uid-2-p-0"><span class="current-info audible">current step: </span><span class="step">1</span> Step 1</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-2-t-1" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-2-h-1" aria-controls="steps-uid-2-p-1"><span class="step">2</span> Step 2</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-2-t-2" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-2-h-2" aria-controls="steps-uid-2-p-2"><span class="step">3</span> Step 3</a></li><li role="tab" class="disabled last" aria-disabled="true"><a id="steps-uid-2-t-3" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-2-h-3" aria-controls="steps-uid-2-p-3"><span class="step">4</span> Step 4</a></li></ul></div><div class="content clearfix">
+                                    <!-- Step 1 -->
+                                    <h6 id="steps-uid-2-h-0" tabindex="-1" class="title current">Step 1</h6>
+                                    <section id="steps-uid-2-p-0" role="tabpanel" aria-labelledby="steps-uid-2-h-0" class="body current" aria-hidden="false">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wfirstName2"> First Name : <span class="danger">*</span> </label>
+                                                    <input type="text" class="form-control required" id="wfirstName2" name="firstName" aria-required="true"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wlastName2"> Last Name : <span class="danger">*</span> </label>
+                                                    <input type="text" class="form-control required" id="wlastName2" name="lastName" aria-required="true"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wemailAddress2"> Email Address : <span class="danger">*</span> </label>
+                                                    <input type="email" class="form-control required" id="wemailAddress2" name="emailAddress" aria-required="true"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wphoneNumber2">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="wphoneNumber2"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wlocation2"> Select City : <span class="danger">*</span> </label>
+                                                    <select class="custom-select form-control required" id="wlocation2" name="location" aria-required="true">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wdate2">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="wdate2"> </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6 id="steps-uid-2-h-1" tabindex="-1" class="title">Step 2</h6>
+                                    <section id="steps-uid-2-p-1" role="tabpanel" aria-labelledby="steps-uid-2-h-1" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Company Name :</label>
+                                                    <input type="text" class="form-control required" id="jobTitle2" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="webUrl3">Company URL :</label>
+                                                    <input type="url" class="form-control required" id="webUrl3" name="webUrl3" aria-required="true"> </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription3">Short Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription3" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6 id="steps-uid-2-h-2" tabindex="-1" class="title">Step 3</h6>
+                                    <section id="steps-uid-2-p-2" role="tabpanel" aria-labelledby="steps-uid-2-h-2" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wint1">Interview For :</label>
+                                                    <input type="text" class="form-control required" id="wint1" aria-required="true"> </div>
+                                                <div class="form-group">
+                                                    <label for="wintType1">Interview Type :</label>
+                                                    <select class="custom-select form-control required" id="wintType1" data-placeholder="Type to search cities" name="wintType1" aria-required="true">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="wLocation1">Location :</label>
+                                                    <select class="custom-select form-control required" id="wLocation1" name="wlocation" aria-required="true">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="wjobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control required" id="wjobTitle2" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="m-b-10">
+                                                        <label class="custom-control custom-radio">
+                                                            <input id="radio5" name="radio" type="radio" class="custom-control-input">
+                                                            <span class="custom-control-label">Employee</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input id="radio6" name="radio" type="radio" class="custom-control-input">
+                                                            <span class="custom-control-label">Contract</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6 id="steps-uid-2-h-3" tabindex="-1" class="title">Step 4</h6>
+                                    <section id="steps-uid-2-p-3" role="tabpanel" aria-labelledby="steps-uid-2-h-3" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control required" id="behName1" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control required" id="participants1" aria-required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control required" id="participants1" name="location" aria-required="true">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">1 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">2 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">3 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">4 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">5 star</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div><div class="actions clearfix"><ul role="menu" aria-label="Pagination"><li class="disabled" aria-disabled="true"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#previous" role="menuitem">Previous</a></li><li aria-hidden="false" aria-disabled="false"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#next" role="menuitem">Next</a></li><li aria-hidden="true" style="display: none;"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#finish" role="menuitem">Submit</a></li></ul></div></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- vertical wizard -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body wizard-content ">
+                                <h4 class="card-title">Step wizard</h4>
+                                <h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com/" target="_blank">offical website</a></h6>
+                                <form action="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#" class="tab-wizard vertical wizard-circle wizard clearfix" role="application" id="steps-uid-1"><div class="steps clearfix"><ul role="tablist"><li role="tab" class="first current" aria-disabled="false" aria-selected="true"><a id="steps-uid-1-t-0" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-1-h-0" aria-controls="steps-uid-1-p-0"><span class="current-info audible">current step: </span><span class="step">1</span> Personal Info</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-1-t-1" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-1-h-1" aria-controls="steps-uid-1-p-1"><span class="step">2</span> Job Status</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-1-t-2" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-1-h-2" aria-controls="steps-uid-1-p-2"><span class="step">3</span> Interview</a></li><li role="tab" class="disabled last" aria-disabled="true"><a id="steps-uid-1-t-3" href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#steps-uid-1-h-3" aria-controls="steps-uid-1-p-3"><span class="step">4</span> Remark</a></li></ul></div><div class="content clearfix">
+                                    <!-- Step 1 -->
+                                    <h6 id="steps-uid-1-h-0" tabindex="-1" class="title current">Personal Info</h6>
+                                    <section id="steps-uid-1-p-0" role="tabpanel" aria-labelledby="steps-uid-1-h-0" class="body current" aria-hidden="false">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName1">First Name :</label>
+                                                    <input type="text" class="form-control" id="firstName1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">Last Name :</label>
+                                                    <input type="text" class="form-control" id="lastName1"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="emailAddress1">Email Address :</label>
+                                                    <input type="email" class="form-control" id="emailAddress1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phoneNumber1">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="phoneNumber1"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="location1">Select City :</label>
+                                                    <select class="custom-select form-control" id="location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="Amsterdam">India</option>
+                                                        <option value="Berlin">USA</option>
+                                                        <option value="Frankfurt">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="date1"> </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6 id="steps-uid-1-h-1" tabindex="-1" class="title">Job Status</h6>
+                                    <section id="steps-uid-1-p-1" role="tabpanel" aria-labelledby="steps-uid-1-h-1" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle1">Job Title :</label>
+                                                    <input type="text" class="form-control" id="jobTitle1"> </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="videoUrl1">Company Name :</label>
+                                                    <input type="text" class="form-control" id="videoUrl1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription1">Job Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6 id="steps-uid-1-h-2" tabindex="-1" class="title">Interview</h6>
+                                    <section id="steps-uid-1-p-2" role="tabpanel" aria-labelledby="steps-uid-1-h-2" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Interview For :</label>
+                                                    <input type="text" class="form-control" id="int1"> </div>
+                                                <div class="form-group">
+                                                    <label for="intType1">Interview Type :</label>
+                                                    <select class="custom-select form-control" id="intType1" data-placeholder="Type to search cities" name="intType1">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Location1">Location :</label>
+                                                    <select class="custom-select form-control" id="Location1" name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control" id="jobTitle2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="m-b-10">
+                                                        <label class="custom-control custom-radio">
+                                                            <input id="radio3" name="radio" type="radio" class="custom-control-input">
+                                                            <span class="custom-control-label">Employee</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input id="radio4" name="radio" type="radio" class="custom-control-input">
+                                                            <span class="custom-control-label">Membership</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6 id="steps-uid-1-h-3" tabindex="-1" class="title">Remark</h6>
+                                    <section id="steps-uid-1-p-3" role="tabpanel" aria-labelledby="steps-uid-1-h-3" class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control" id="participants1" name="location">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">1 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">2 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">3 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">4 star</span>
+                                                        </label>
+                                                        <label class="inline custom-control custom-checkbox block">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-label ml-0">5 star</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div><div class="actions clearfix"><ul role="menu" aria-label="Pagination"><li class="disabled" aria-disabled="true"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#previous" role="menuitem">Previous</a></li><li aria-hidden="false" aria-disabled="false"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#next" role="menuitem">Next</a></li><li aria-hidden="true" style="display: none;"><a href="file:///home/bruno/Desktop/materialpro_v1.0/main-package/minisidebar/form-wizard.html#finish" role="menuitem">Submit</a></li></ul></div></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- footer -->
+                <!-- ============================================================== -->
+                <footer class="footer"> © 2018 Material Pro Admin by wrappixel.com </footer>
+                <!-- ============================================================== -->
+                <!-- End footer -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- All Jquery -->
+        <!-- ============================================================== -->
+        <script src="./form_files/jquery.min.js"></script>
+        <!-- Bootstrap tether Core JavaScript -->
+        <script src="./form_files/popper.min.js"></script>
+        <script src="./form_files/bootstrap.min.js"></script>
+        <!-- slimscrollbar scrollbar JavaScript -->
+        <script src="./form_files/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="./form_files/waves.js"></script>
+        <!--Menu sidebar -->
+        <script src="./form_files/sidebarmenu.js"></script>
+        <!--stickey kit -->
+        <script src="./form_files/sticky-kit.min.js"></script>
+        <script src="./form_files/jquery.sparkline.min.js"></script>
+        <!--Custom JavaScript -->
+        <script src="./form_files/custom.min.js"></script>
+        <script src="./form_files/moment.min.js"></script>
+        <script src="./form_files/jquery.steps.min.js"></script>
+        <script src="./form_files/jquery.validate.min.js"></script>
+        <!-- Sweet-Alert  -->
+        <script src="./form_files/sweetalert.min.js"></script>
+        <script src="./form_files/steps.js"></script>
+        <!-- ============================================================== -->
+        <!-- Style switcher -->
+        <!-- ============================================================== -->
+        <script src="./form_files/jQuery.style.switcher.js"></script>
+
+
+</div></body></html>

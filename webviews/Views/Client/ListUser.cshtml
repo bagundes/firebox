@@ -1,0 +1,162 @@
+@{
+    //Layout = "_LayoutBlank";
+    ViewData["Title"] = "Vendedores";
+    ViewData["Module"] = "Administração";
+    ViewData["View"] = "Lista dos clientes";
+    //ViewData["Controller"] = "User";
+    //ViewData["Action"] = "List";
+}
+
+<div class="card">
+    <div class="card-body">
+        <!--h4 class="card-title">Exportar</h4>
+        <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6-->
+        <div class="table-responsive m-t-40">
+            <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Cliente</th>
+                        <th>UF</th>
+                        <th>CNPJ</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <!--tfoot>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Usuário</th>
+                        <th>E-mail</th>
+                        <th>Perfil</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                </tfoot-->
+                <tbody>
+                    @foreach(var user in Model.ListUserModel)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-controller="User" asp-action="Edit" asp-route-unique="@user.Unique">
+                                    <img src="~/images/users/@user.Picture" alt="user" width="20" class="img-circle" /> 
+                                    @user.FullName
+                                </a>
+                            </td>
+                            <td><text>@@</text>@user.Name</td>
+                            <td>@user.Email</td>
+                            <td>
+                                @if(user.Perfil != null && user.Perfil.Count > 0) {
+                                    <span class="label label-info">
+                                    @user.Perfil[0].Name
+                                    </span>
+                                } else {
+
+                                }
+                                </td>
+                            <td>@if(@user.Admin)
+                                {   
+                                    <i class="mdi mdi-account-star" 
+                                        data-toggle="tooltip" 
+                                        data-placement="top" 
+                                        title data-original-title="Administrador"></i>
+                                }
+                                @if(@user.Blocked)
+                                {   
+                                    <i class="mdi mdi-account-key" 
+                                        data-toggle="tooltip" 
+                                        data-placement="top" 
+                                        title data-original-title="Bloqueado"></i>
+                                }
+                                @if(!@user.Actived)
+                                {   
+                                    <i class="mdi mdi-account-off" 
+                                        data-toggle="tooltip" 
+                                        data-placement="top" 
+                                        title data-original-title="Ativado"></i>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ação
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" asp-controller="User" asp-action="EditBlock" asp-route-unique="@user.Unique">
+                                            @if(@user.Blocked) {
+                                                <text>Desbloquear</text>
+                                            } else {
+                                                <text>Bloquear</text>
+                                            }
+
+                                        </a>
+                                        <a class="dropdown-item" asp-controller="User" asp-action="EditEnable" asp-route-unique="@user.Unique">
+                                            @if(@user.Actived) {
+                                                <text>Desativar</text>
+                                            } else {
+                                                <text>Ativar</text>
+                                            }
+                                            </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="User" asp-action="Edit" asp-route-unique="@user.Unique">Editar</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+    $(document).ready(function() {
+        $('#myTable').DataTable();
+        $(document).ready(function() {
+            var table = $('#example').DataTable({
+                "columnDefs": [{
+                    "visible": false,
+                    "targets": 2
+                }],
+                "order": [
+                    [2, 'asc']
+                ],
+                "displayLength": 25,
+                "drawCallback": function(settings) {
+                    var api = this.api();
+                    var rows = api.rows({
+                        page: 'current'
+                    }).nodes();
+                    var last = null;
+                    api.column(2, {
+                        page: 'current'
+                    }).data().each(function(group, i) {
+                        if (last !== group) {
+                            $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                            last = group;
+                        }
+                    });
+                }
+            });
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function() {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                    table.order([2, 'desc']).draw();
+                } else {
+                    table.order([2, 'asc']).draw();
+                }
+            });
+        });
+    });
+    $('#example23').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+    </script>
+}

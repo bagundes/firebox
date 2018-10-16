@@ -1,0 +1,47 @@
+@model webviews.Models.ViewModels.MenuNavegationViewModel;
+
+
+<nav class="sidebar-nav">
+    <ul id="sidebarnav">
+        <li class="nav-small-cap">MENU</li>
+
+        @** Ajustar para que fique dinamico **@
+        @foreach(var nivel1 in Model.ListModuleModel.Where(t => t.Nivel == 1))
+        {
+            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="mdi mdi-arrange-send-backward"></i>
+                    <span class="hide-menu">@nivel1.Name</span>
+                </a>
+                <ul aria-expanded="false" class="collapse">
+                @foreach(var nivel2 in Model.ListModuleModel.Where(t => t.Nivel == 2 && t.FatherId == nivel1.Id))
+                {
+                    @if(!nivel2.Popup)
+                    {
+                        <li><a asp-Controller="@nivel2.Controller" asp-Action="@nivel2.Action">@nivel2.Name</a></li>
+                    } else 
+                    {
+                        <li><a class="has-arrow" href="#" aria-expanded="false">@nivel2.Name</a>
+                        <ul aria-expanded="false" class="collapse">
+                        @foreach(var nivel3 in Model.ListModuleModel.Where(t => t.Nivel == 3 && t.FatherId == nivel2.Id))
+                        {
+                        
+                            <li><a asp-Controller="@nivel3.Controller" asp-Action="@nivel3.Action">@nivel3.Name</a></li>
+                        
+                        }
+                        </ul>
+                    </li>
+                    }
+                }
+                </ul>
+            </li>    
+        }    
+    </ul>
+</nav>
+
+@section Scripts{
+
+<script>
+$(function () {
+});
+</script>
+}

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Order\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <!--PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.1.2" /-->
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Documents\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Order\List.cshtml" />
+  </ItemGroup>
+
+</Project>

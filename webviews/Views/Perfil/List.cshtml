@@ -1,0 +1,38 @@
+@model webviews.Models.ViewModels.PerfilListViewModel;
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Módulo</th>
+            <th>Ordem</th>
+            <th>Visualizar</th>
+            <th>Adicionar</th>
+            <th>Atualizar</th>
+            <th>Todos Usuários</th>
+        </tr>
+    </thead>
+<tbody>
+@{  
+    var perfils = Model.PerfilsModel.Where(t => t.PerfilId == 1).ToList();
+    foreach(var perfil in perfils)
+    {
+                                        
+        <tr>
+            <td>@perfil.PerfilId</td>
+            <td>@perfil.Module.Name</td>
+            <td><input asp-for="@perfil.Module.VisOrder" size="1"></td>
+            <td><div class="checkbox checkbox-primary pull-left p-t-0">
+                <input asp-for="@perfil.View"></div></td>
+            <td><div class="checkbox checkbox-primary pull-left p-t-0">
+                <input asp-for="@perfil.Add"></div></td>
+            <td><div class="checkbox checkbox-primary pull-left p-t-0">
+                <input asp-for="@perfil.Edit"></div></td>
+            <td><input type="checkbox">
+                <input asp-for="@perfil.AllUsers">dsdsd</td>
+        </tr>            
+    }                                                                    
+}
+</tbody>
+</table>

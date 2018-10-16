@@ -1,0 +1,11 @@
+C:\Projects\kurumin\firebox\box\bin\Debug\netcoreapp2.1\box.deps.json
+C:\Projects\kurumin\firebox\box\bin\Debug\netcoreapp2.1\box.runtimeconfig.json
+C:\Projects\kurumin\firebox\box\bin\Debug\netcoreapp2.1\box.runtimeconfig.dev.json
+C:\Projects\kurumin\firebox\box\bin\Debug\netcoreapp2.1\box.dll
+C:\Projects\kurumin\firebox\box\obj\Debug\netcoreapp2.1\box.csprojAssemblyReference.cache
+C:\Projects\kurumin\firebox\box\obj\Debug\netcoreapp2.1\box.csproj.CoreCompileInputs.cache
+C:\Projects\kurumin\firebox\box\obj\Debug\netcoreapp2.1\box.AssemblyInfoInputs.cache
+C:\Projects\kurumin\firebox\box\obj\Debug\netcoreapp2.1\box.AssemblyInfo.cs
+C:\Projects\kurumin\firebox\box\bin\Debug\netcoreapp2.1\box.pdb
+C:\Projects\kurumin\firebox\box\obj\Debug\netcoreapp2.1\box.dll
+C:\Projects\kurumin\firebox\box\obj\Debug\netcoreapp2.1\box.pdb

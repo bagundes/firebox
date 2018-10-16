@@ -1,0 +1,128 @@
+@{
+    //Layout = "_LayoutBlank";
+    ViewData["Title"] = "Editar Usuário";
+    ViewData["Module"] = "Lista";
+    ViewData["View"] = "Usuário";
+    ViewData["Controller"] = "User";
+    ViewData["Action"] = "List";
+}
+@model webviews.Models.ViewModels.UsersViewModel;
+
+
+<form class="form-material m-t-40" asp-controller="User" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="@Model.UserModel.Terms" value="@Model.UserModel.Terms">
+    <input type="hidden" asp-for="@Model.UserModel.UUID" value="@Model.UserModel.UUID">
+    <input type="hidden" asp-for="@Model.UserModel.Indentify" value="@Model.UserModel.Id">
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><img src="~/images/users/@Model.UserModel.Picture" alt="user" width="20" class="img-circle" />  @Model.UserModel.FullName</h4>
+                <h6 class="card-subtitle">Altere as informações do usuário <code>@Model.UserModel.Name</code>.</h6>
+                <div class="form-group">
+                    <label asp-for="@Model.UserModel.User"></label>
+                    <input asp-for="@Model.UserModel.User" placeholder="" class="form-control">
+                    <span asp-validation-for="@Model.UserModel.User" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.UserModel.FullName"></label>
+                    <input asp-for="@Model.UserModel.FullName" placeholder="" class="form-control">
+                    <span asp-validation-for="@Model.UserModel.FullName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.UserModel.Email"></label>
+                    <input asp-for="@Model.UserModel.Email" placeholder="" class="form-control">
+                    <span asp-validation-for="@Model.UserModel.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.UserModel.Passwd"></label>
+                    <input asp-for="@Model.UserModel.Passwd" placeholder="" class="form-control">
+                    <span asp-validation-for="@Model.UserModel.Passwd" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Dados de acesso ao sistema</h4>
+                <h6 class="card-subtitle">Altere as permissões.</h6>
+                <div class="form-group">
+                    <label asp-for="@Model.UserModel.PerfilName"></label>
+                    <select asp-for="@Model.UserModel.PerfilId" asp-items="@Model.SelPerfils"class="custom-select col-12">
+                        <option value="0">Nenhum perfil</option>
+                    </select>
+                    <span asp-validation-for="@Model.UserModel.PerfilId" class="text-danger"></span>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="switch">
+                                <label asp-for="@Model.UserModel.Blocked">
+                                    <input asp-for="@Model.UserModel.Blocked"><span class="lever"></span> @Html.DisplayNameFor( m => m.UserModel.Blocked)</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="switch">
+                                <label asp-for="@Model.UserModel.Admin">
+                                    <input asp-for="@Model.UserModel.Admin"><span class="lever"></span> @Html.DisplayNameFor( m => m.UserModel.Admin)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="switch">
+                                <label asp-for="@Model.UserModel.Actived">
+                                    <input asp-for="@Model.UserModel.Actived"><span class="lever"></span> @Html.DisplayNameFor( m => m.UserModel.Actived)</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="switch">
+                                <label asp-for="@Model.UserModel.ERPEnabled">
+                                    <input asp-for="@Model.UserModel.ERPEnabled"><span class="lever"></span> @Html.DisplayNameFor( m => m.UserModel.ERPEnabled)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="@Model.UserModel.ERPVendor"></label>
+                            <select asp-for="@Model.UserModel.ERPVendor" asp-items="@Model.SelVendors"class="custom-select col-12">
+                                <option value="0">Nenhum vendedor</option>
+                            </select>
+                            <span asp-validation-for="@Model.UserModel.ERPVendor" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.UserModel.ERPUser"></label>
+                            <input asp-for="@Model.UserModel.ERPUser" placeholder="" class="form-control">
+                            <span asp-validation-for="@Model.UserModel.ERPUser" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="@Model.UserModel.ERPBranch"></label>
+                            <input asp-for="@Model.UserModel.ERPBranch" placeholder="" class="form-control">
+                            <span asp-validation-for="@Model.UserModel.ERPBranch" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.UserModel.ERPPasswd"></label>
+                            <input asp-for="@Model.UserModel.ERPPasswd" placeholder="" class="form-control">
+                            <span asp-validation-for="@Model.UserModel.ERPPasswd" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+         <div class="card">
+            <div class="card-body">
+                <input type="submit" class="btn btn-rounded btn-info" value="Atualizar"/>
+            </div>
+        </div>
+    </div>
+</div>
+</form>

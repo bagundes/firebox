@@ -1,0 +1,58 @@
+﻿@{
+    //Layout = "_LayoutBlank";
+    ViewData["Title"] = "Pedidos de Venda";
+    ViewData["Module"] = "Vendas";
+    ViewData["View"] = "Cabeçalho";
+}
+
+@model  webviews.Models.ViewModels.DocumentHeaderViewModel;
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Pedido de Venda</h4>
+        <h6 class="card-subtitle">Dados do cliente</h6>
+        <form asp-controller="Order" asp-action="Header" method="post">
+            <div class="table-responsive">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <!--input class="form-control" asp-for="@Model.Order.PartnerId" placeholder="@Model.Order.PartnerId">
+                <div class="input-group-append">
+                    <button class="btn btn-info" type="button">Pesquisar</button>
+                </div-->
+                            <select asp-for="@Model.Order.PartnerId" asp-items="@Model.Customer" class="select-single col-12"></select>
+                        </div>
+                    </div>
+                    <!--div class="col-9">
+                        <div class="form-group">
+                            <label asp-for="@Model.Order.PartnerName"></label>
+                            <input asp-for="@Model.Order.PartnerName" placeholder="" class="form-control" readonly>
+                            <span asp-validation-for="@Model.Order.PartnerName" class="text-danger"></span>
+                        </div>
+                    </div-->
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label asp-for="@Model.Order.CommentsHeader"></label>
+                            <textarea class="form-control" asp-for="@Model.Order.CommentsHeader"></textarea>
+                            <span asp-validation-for="@Model.Order.PartnerName" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            <button class="btn btn-success waves-effect waves-light m-r-10" type="submit">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+         jQuery(document).ready(function() {
+            $('.select-single').select2();
+        });
+    </script>
+}
